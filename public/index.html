@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>User Database</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" />
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+   </head>
+   <body>
+      <header class="header">
+         <h1>Users Database</h1>
+         <a href="https://github.com/ValeriiVasianovych">
+            <svg width="36" height="36" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <rect width="14" height="14" rx="3" fill="white" />
+               <path
+                  d="M7 1C6.21207 1 5.43185 1.15519 4.7039 1.45672C3.97595 1.75825 3.31451 2.20021 2.75736 2.75736C1.63214 3.88258 1 5.4087 1 7C1 9.652 2.722 11.902 5.104 12.7C5.404 12.748 5.5 12.562 5.5 12.4V11.386C3.838 11.746 3.484 10.582 3.484 10.582C3.208 9.886 2.818 9.7 2.818 9.7C2.272 9.328 2.86 9.34 2.86 9.34C3.46 9.382 3.778 9.958 3.778 9.958C4.3 10.87 5.182 10.6 5.524 10.456C5.578 10.066 5.734 9.802 5.902 9.652C4.57 9.502 3.172 8.986 3.172 6.7C3.172 6.034 3.4 5.5 3.79 5.074C3.73 4.924 3.52 4.3 3.85 3.49C3.85 3.49 4.354 3.328 5.5 4.102C5.974 3.97 6.49 3.904 7 3.904C7.51 3.904 8.026 3.97 8.5 4.102C9.646 3.328 10.15 3.49 10.15 3.49C10.48 4.3 10.27 4.924 10.21 5.074C10.6 5.5 10.828 6.034 10.828 6.7C10.828 8.992 9.424 9.496 8.086 9.646C8.302 9.832 8.5 10.198 8.5 10.756V12.4C8.5 12.562 8.596 12.754 8.902 12.7C11.284 11.896 13 9.652 13 7C13 6.21207 12.8448 5.43185 12.5433 4.7039C12.2417 3.97595 11.7998 3.31451 11.2426 2.75736C10.6855 2.20021 10.0241 1.75825 9.2961 1.45672C8.56815 1.15519 7.78793 1 7 1Z"
+                  fill="black"
+               />
+            </svg>
+         </a>
+      </header>
+      <main class="main">
+         <div class="content">
+            <h2>Welcome to the Users Database! <br /></h2>
+            <p class="getMessage"></p>
+            <div class="form_content">
+               <label for="id">ID:<input class="inputId" type="number" name="id" id="id" /></label>
+               <label for="name">Name:<input class="InputName" name="name" id="name" /></label>
+               <label for="surname">Surname:<input class="InputSurname" name="surname" id="surname" /></label>
+               <label for="company">Company:<input class="InputCompany" name="company" id="company" /></label>
+               <label for="position">Position:<input class="InputPosition" name="position" id="position" /></label>
+               <div>
+                  <button class="post" type="submit">Add User</button>
+                  <button class="get" type="submit">Get User</button>
+                  <button class="put" type="submit">Update User</button>
+                  <button class="delete" type="submit">Delete User</button>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <h3>&lt;Users/&gt;</h3>
+         <div class="users"></div>
+      </footer>
+      <script src="script.js"></script>
+   </body>
+</html>
